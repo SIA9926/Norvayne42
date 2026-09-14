@@ -101,3 +101,4 @@ The new shared features use the same Upstash Redis environment variables as the 
 
 ## Full character portraits
 Click/tap a character avatar to open the full character artwork. The viewer closes with the × button, by tapping the dark backdrop, or with Escape. Portrait assets are stored in `assets/portraits/`.
+Test
