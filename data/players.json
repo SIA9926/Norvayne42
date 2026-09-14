@@ -1,0 +1,84 @@
+{
+  "players": [
+    {
+      "telegramUsername": "kho_rny",
+      "telegramId": null,
+      "character": {
+        "name": "Мико",
+        "title": "Персонаж игрока",
+        "avatar": "./assets/avatars/miko.png",
+        "stats": [],
+        "equipment": [],
+        "id": "miko",
+        "magic": true,
+        "portrait": "./assets/portraits/miko.jpg",
+        "bodyMapImage": "./assets/armor/miko.webp"
+      }
+    },
+    {
+      "telegramUsername": "uuu_duchess",
+      "telegramId": null,
+      "character": {
+        "name": "Мортимер",
+        "title": "Персонаж игрока",
+        "avatar": "./assets/avatars/mortimer.png",
+        "stats": [],
+        "equipment": [],
+        "id": "mortimer",
+        "portrait": "./assets/portraits/mortimer.jpg",
+        "bodyMapImage": "./assets/armor/mortimer.webp"
+      }
+    },
+    {
+      "telegramUsername": "oOHodorOo",
+      "telegramId": null,
+      "character": {
+        "name": "Велизарий",
+        "title": "Персонаж игрока",
+        "avatar": "./assets/avatars/velizariy.png",
+        "stats": [],
+        "equipment": [],
+        "id": "velizariy",
+        "portrait": "./assets/portraits/velizariy.jpg",
+        "bodyMapImage": "./assets/armor/velizariy.webp"
+      }
+    },
+    {
+      "telegramUsername": "Stariy10",
+      "telegramId": null,
+      "character": {
+        "name": "Ссарк'Тал",
+        "title": "Персонаж игрока",
+        "avatar": "./assets/avatars/sark-tal.png",
+        "stats": [],
+        "equipment": [],
+        "id": "ssark_tal",
+        "portrait": "./assets/portraits/sark-tal.jpg",
+        "bodyMapImage": "./assets/armor/sark-tal.webp"
+      }
+    },
+    {
+      "telegramUsername": "olegkuxin",
+      "telegramId": null,
+      "character": {
+        "name": "Рене",
+        "title": "Персонаж игрока",
+        "avatar": "./assets/avatars/rene.png",
+        "stats": [],
+        "equipment": [],
+        "id": "rene",
+        "magic": true,
+        "portrait": "./assets/portraits/rene.jpg",
+        "bodyMapImage": "./assets/armor/rene.webp"
+      }
+    }
+  ],
+  "admins": [
+    {
+      "telegramUsername": "SokolBGA",
+      "telegramId": null,
+      "name": "Мастер",
+      "role": "admin"
+    }
+  ]
+}

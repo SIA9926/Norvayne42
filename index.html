@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Norvayne</title>
+  <script src="https://telegram.org/js/telegram-web-app.js?63"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app" id="appRoot">
+  <header class="topbar sketch-panel">
+    <div class="brand-block">
+      <div class="compass-mark" aria-hidden="true"><img src="./assets/norvayne-logo-reference.png" alt=""></div>
+      <div class="brand-copy"><h1>Norvayne</h1><div class="year-line" id="yearPill">983 ME</div></div>
+    </div>
+    <nav class="top-tabs" aria-label="Разделы">
+      <button class="active" data-tab="map">Карта</button>
+      <button data-tab="calendar">Календарь</button>
+      <button data-tab="character">Персонаж</button>
+    </nav>
+    <button id="userChip" class="user-chip" type="button" aria-label="Открыть персонажа">
+      <span class="user-chip-avatar" id="userChipAvatar">?</span>
+      <span class="user-chip-copy"><strong id="userChipName">Гость</strong><small id="userChipSub">Telegram</small></span>
+    </button>
+  </header>
+
+  <main class="workspace" id="workspace">
+    <section id="mapTab" class="map-pane">
+      <div class="map-screen">
+        <div id="mapStage" class="map-stage">
+          <div id="mapCanvas" class="map-canvas"><img id="mapImage" src="./assets/Norvayne-clean.svg" alt="Карта Norvayne" draggable="false"><div id="cityLayer" class="city-layer" aria-label="Города карты"></div></div>
+          <div class="map-controls sketch-controls"><button id="zoomIn" aria-label="Увеличить">＋</button><button id="zoomOut" aria-label="Уменьшить">−</button><button id="resetMap" aria-label="Сбросить">⌾</button></div>
+          <div id="zoomBadge" class="zoom-badge">100%</div>
+        </div>
+        <div id="status" class="status"></div>
+        <div id="details"></div>
+      </div>
+    </section>
+
+    <aside id="calendarTab" class="calendar-side sketch-panel" aria-label="Календарь мира">
+      <div class="calendar-ornament">◇ ───── ◇ ───── ◇</div>
+      <div class="calendar-title-row">
+        <div><div class="eyebrow">КАЛЕНДАРЬ</div><h2 id="calendarYearTitle">809 ME</h2></div>
+        <div class="year-length" id="yearLengthLabel">394 дня</div>
+      </div>
+
+      <section class="moon-section">
+        <div class="section-label">Луны</div>
+        <div id="moonPhases" class="moon-phases"></div>
+      </section>
+
+      <div class="calendar-head">
+        <button id="prevMonth" aria-label="Предыдущий месяц">‹</button>
+        <h3 id="monthTitle"></h3>
+        <button id="nextMonth" aria-label="Следующий месяц">›</button>
+      </div>
+      <div id="weekdays" class="weekdays"></div>
+      <div id="days" class="days"></div>
+
+      <div class="selected-date"><span>Выбрано</span><strong id="selectedDate"></strong></div>
+      <div id="dayNote" class="day-note" hidden></div>
+
+      <div class="events-heading"><span>События</span></div>
+      <div id="eventsList" class="events-list"></div>
+    </aside>
+
+    <section id="characterTab" class="character-pane" aria-label="Персонаж">
+      <div id="characterContent" class="character-sheet sketch-panel">
+        <div class="character-loading">Загрузка персонажа…</div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="./data/world-data.js"></script>
+<script src="./data/calendar-data.js"></script>
+<script src="./data/swade-equipment.js"></script>
+<script src="./app.js"></script>
+<script src="./data/swade-traits.js"></script>
+<script src="./data/swade-powers.js"></script>
+<script src="./player-profile.js"></script>
+</body>
+</html>
